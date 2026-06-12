@@ -1,5 +1,5 @@
-# my-github-site-
-"My first GitHub project" 
+# My-GitHub-Site-
+My first GitHub project! 
 # Hi, I'm Ailin Vazquez!
 ## About Me
 - I'm a 12th grader at Energy Tech High School
