@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailin Vazquez | Art Portfolio</title>
+    <style>
+        /* Resetting defaults using standard box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf6f0; /* Canvas paper color */
+            color: #2b2a28;
+            /* Using standard, built-in system fonts only */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Centered Artistic Header */
+        header {
+            text-align: center;
+            padding: 5rem 1rem 3rem 1rem;
+        }
+
+        header h1 {
+            /* Georgia is built into almost every computer/phone by default */
+            font-family: "Georgia", "Times New Roman", serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            color: #1b3b36; /* Deep forest paint color */
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bd6a42; /* Terracotta clay color */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Intro Profile Card */
+        .bio-box {
+            max-width: 650px;
+            margin: 0 auto 5rem auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 2px solid #2b2a28;
+            /* Retro hard-shadow effect using CSS layout alone */
+            box-shadow: 6px 6px 0px #bd6a42;
+        }
+
+        .bio-box p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .bio-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Gallery Structure */
+        .gallery-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding-bottom: 5rem;
+        }
+
+        .gallery-container h2 {
+            font-family: "Georgia", "Times New Roman", serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #1b3b36;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* Grid layout without libraries */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        /* Polaroid / Art Frame Concept */
+        .art-frame {
+            background-color: #ffffff;
+            padding: 16px;
+            border: 1px solid #e3ded6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        /* The Box where the drawing/painting will go */
+        .art-canvas-placeholder {
+            width: 100%;
+            height: 320px;
+            background-color: #f2ebe1;
+            border: 1px dashed #cdc5b9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #8c8376;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .art-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .art-details h3 {
+            font-family: "Georgia", "Times New Roman", serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #1b3b36;
+            margin-bottom: 6px;
+        }
+
+        .art-details p {
+            font-size: 0.95rem;
+            color: #615e58;
+            margin-bottom: 12px;
+        }
+
+        /* Native CSS Pill Tags */
+        .medium-tag {
+            display: inline-block;
+            background-color: #f2ebe1;
+            color: #5c564d;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Clean Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid #e3ded6;
+            color: #8c8376;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ailin Vazquez</h1>
+        <p>Drawing & Painting</p>
+    </header>
+
+    <main>
+        <section class="bio-box">
+            <p>Welcome! I'm Ailin, a high school student who spends most of my free time creating with pencils, brushes, and ink.</p>
+            <p>This page acts as my digital gallery space where I look back at my favorite projects, keep track of my progress, and showcase my experiments with colors and lines.</p>
+        </section>
+
+        <section class="gallery-container">
+            <h2>Recent Work</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="art-frame">
+                    <div class="art-canvas-placeholder">
+                        <div class="art-icon">✏️</div>
+                        <span>[ Sketchbook Photo ]</span>
+                    </div>
+                    <div class="art-details">
+                        <h3>Graphite Portrait Study</h3>
+                        <p>Focusing on realistic lighting patterns, values, and blending textures using 4B and 6B pencils.</p>
+                        <span class="medium-tag">Drawing</span>
+                    </div>
+                </div>
+
+                <div class="art-frame">
+                    <div class="art-canvas-placeholder">
+                        <div class="art-icon">🎨</div>
+                        <span>[ Canvas Photo ]</span>
+                    </div>
+                    <div class="art-details">
+                        <h3>Layers of Acrylic</h3>
+                        <p>An exploration of thick textures and color theory using heavy body acrylic paints on a wood block.</p>
+                        <span class="medium-tag">Painting</span>
+                    </div>
+                </div>
+
+                <div class="art-frame">
+                    <div class="art-canvas-placeholder">
+                        <div class="art-icon">✒️</div>
+                        <span>[ Artwork Photo ]</span>
+                    </div>
+                    <div class="art-details">
+                        <h3>Ink & Watercolor Landscape</h3>
+                        <p>Combining the precise control of fine-liner ink pens with the unpredictable bleeding of watercolors.</p>
+                        <span class="medium-tag">Mixed Media</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ailin Vazquez &bull; Built natively with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
